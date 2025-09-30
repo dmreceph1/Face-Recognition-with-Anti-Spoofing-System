@@ -3,8 +3,10 @@
 Bu proje, **yapay zeka destekli yüz tanıma** ve **fake/real yüz ayrımı** yapan bir sistemdir. Gerçek kişiler tespit edildiğinde Firebase veritabanından kullanıcı bilgileri çekilir ve görsel arayüzde görüntülenir. Fake (sahte) yüzler sistem tarafından tespit edilip göz ardı edilir.
 
 ---
-> ⚠️ Not: Eğitimli CNN modelim (`face_liveness_model.h5`) ve YOLOv8 modelim (`best.pt`) boyutları büyük olduğundan GitHub’a yüklenmemiştir. 
-> Bu modelleri ayrıca paylaşmaktayım. Kurulum için proje dizinine kendiniz eklemeniz gerekir.
+> ⚠️ Not: Eğitimli CNN modelim (`face_liveness_model.h5`) boyutu büyük olduğundan GitHub’a yüklenmemiştir. 
+> Bu modeli ayrıca paylaşmaktayım. Kurulum için proje dizinine kendiniz eklemeniz gerekir.
+> ⚠️ Not:Firebase servisi için JSON key dosyası GitHub’a yüklenmemiştir.
+> Bu dosyayı projeyi çalıştırmadan önce kendi makinenize indirip proje dizinine eklemeniz gerekmektedir.
 
 ## Özellikler
 
