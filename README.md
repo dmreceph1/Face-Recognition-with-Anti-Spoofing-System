@@ -38,15 +38,15 @@ git clone <repo-link>
 cd <proje-dizini>
 
 # 2️⃣ Gerekli Python paketlerini yükleyin
-pip install -r requirements.txt
+pip install opencv-python firebase-admin numpy face_recognition cvzone tensorflow ultralytics
 
 # 3️⃣ CNN Modelini ekleyin
-echo "⚠️ Eğitimli CNN modelim (face_liveness_model.h5) boyutu büyük olduğundan GitHub'a yüklenmemiştir."
-echo "Lütfen modeli indirip proje dizinine ekleyin."
+"⚠️ Eğitimli CNN modelim (face_liveness_model.h5) boyutu büyük olduğundan GitHub'a yüklenmemiştir."
+"Lütfen modeli indirip proje dizinine ekleyin."
 
 # 4️⃣ Firebase JSON key dosyasını ekleyin
-echo "⚠️ Firebase servisi için JSON key dosyasını kendiniz oluşturup proje dizinine eklemeniz gerekiyor."
-echo "Proje bu dosyayı otomatik olarak kullanacaktır."
+"⚠️ Firebase servisi için JSON key dosyasını kendiniz oluşturup proje dizinine eklemeniz gerekiyor."
+"Proje bu dosyayı otomatik olarak kullanacaktır."
 
 # 5️⃣ Projeyi çalıştırın
 python app.py
