@@ -33,14 +33,20 @@ Bu proje, **yapay zeka destekli yüz tanıma** ve **fake/real yüz ayrımı** ya
 
 ## Kurulum ve Kullanım
 
-Projeyi kullanmak için önce GitHub’dan klonlayıp projenin klasörüne girin. Daha sonra Python 3 yüklü olduğundan emin olarak gerekli kütüphaneleri yükleyin:
-```bash
-pip install opencv-python firebase-admin numpy face_recognition cvzone tensorflow ultralytics
-```
+# 1️⃣ Depoyu klonlayın
+git clone <repo-link>
+cd <proje-dizini>
 
-Firebase servisi için oluşturduğunuz serviceAccountKey.json dosyasını projeye ekleyin. Kendi eğitilmiş CNN modelinizi (fake/real ayrımı için) ve YOLOv8 modelinizi (best.pt) proje dizinine koyun. Arayüz görselleri için Resources/Modes/ klasörüne mod resimlerinizi, arka plan görselini Resources/background.png dosyasına ekleyin. Her şey hazır olduğunda terminalde projenin ana dosyasının bulunduğu klasörde şu komutu çalıştırarak sistemi başlatın:
-```bash
-python main.py
-```
-Sistem açıldığında kamera aktif hale gelecek ve canlı görüntü üzerinde çalışacaktır; model önce yüzün fake mi real mi olduğunu sınıflandırır, real olarak tespit edilen yüzlerde face_recognition ile Firebase Storage’daki kayıtlı yüzlerle eşleştirme yapılarak kullanıcı bilgileri ekranda gösterilecektir. Sahte (fake) yüzler tespit edildiğinde işlem atlanacaktır.
-```
+# 2️⃣ Gerekli Python paketlerini yükleyin
+pip install -r requirements.txt
+
+# 3️⃣ CNN Modelini ekleyin
+echo "⚠️ Eğitimli CNN modelim (face_liveness_model.h5) boyutu büyük olduğundan GitHub'a yüklenmemiştir."
+echo "Lütfen modeli indirip proje dizinine ekleyin."
+
+# 4️⃣ Firebase JSON key dosyasını ekleyin
+echo "⚠️ Firebase servisi için JSON key dosyasını kendiniz oluşturup proje dizinine eklemeniz gerekiyor."
+echo "Proje bu dosyayı otomatik olarak kullanacaktır."
+
+# 5️⃣ Projeyi çalıştırın
+python app.py
