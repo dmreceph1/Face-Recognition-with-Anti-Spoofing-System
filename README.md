@@ -4,6 +4,7 @@ Bu proje, **yapay zeka destekli yüz tanıma** ve **fake/real yüz ayrımı** ya
 
 ---
 ⚠️ Not: Eğitimli CNN modelim (face_liveness_model.h5) boyutu büyük olduğundan GitHub’a yüklenmemiştir. Bu modeli ayrıca paylaşacağım. Projeyi çalıştırmadan önce, modeli kendi makinenize indirip proje dizinine eklemeniz gerekmektedir.
+---
 ⚠️ Not: Firebase servisi için JSON key dosyasını kendiniz oluşturup proje dizinine eklemeniz gerekmektedir; proje bu dosyayı otomatik olarak kullanacaktır.
 
 ## Özellikler
